@@ -2,7 +2,8 @@
 <html lang="en-ca">
 <head>
     <meta charset="utf-8">
-    <title>Dinos 'R' Us</title>
+    <title> {{page.title}} · Dinos 'R' Us</title>
+    <meta name="description" content="{{page.meta}}">
     <meta name="handheldfriendly" content="true">
     <meta name="mobileoptimized" content="240">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -18,7 +19,8 @@
     <link href="{{site.baseurl}}/css/header.css" rel="stylesheet">
     <link href="{{site.baseurl}}/css/footer.css" rel="stylesheet"> 
     <link href="{{site.baseurl}}/css/product.css" rel="stylesheet">
-    <link href="{{site.baseurl}}/css/product-list-item.css" rel="stylesheet"> 
+    <link href="{{site.baseurl}}/css/product-list-item.css" rel="stylesheet">
+    <link href="{{site.baseurl}}/css/promos.css" rel="stylesheet"> 
 </head>
     
 <body>
@@ -34,7 +36,7 @@
               <a class="{% if page.url == '/'%}current{% endif %}" href="{{site.baseurl}}/">Home</a>
             </li>
             <li class="list-group-item list-group-item-inline">
-              <a class="{% if page.contains == 'dinosaurs'%}current{% endif %}" href="{{site.baseurl}}/dinosaurs.html">Dinosaurs</a>
+              <a class="{% if page.url contains 'dinosaurs'%}current{% endif %}" href="{{site.baseurl}}/dinosaurs/">Dinosaurs</a>
             </li>
             <li class="list-group-item list-group-item-inline">
               <a class="{% if page.url == '/about/'%}current{% endif %}" href="{{site.baseurl}}/about/">About</a>
@@ -44,13 +46,19 @@
       </div>
     </header>
     
+    {% if page.showbanner %}
+    <div class="banner">
+        <h1>{{page.bannertext}}</h1>
+    </div>
+    {% endif %}
+    
     {{content}}
     
     <footer class="footer pad-t">
-  <div class="grid">
-    <div class="unit unit-s-1 unit-m-1 unit-l-1-2 gutter-1-2">
-      <p class="footer-copyright"><small>© 2014 Dinos ’R’ Us</small></p>
-    </div>
+    <div class="grid">
+        <div class="unit unit-s-1 unit-m-1 unit-l-1-2 gutter-1-2">
+            <p class="footer-copyright"><small>© 2014 Dinos ’R’ Us</small></p>
+        </div>
     <div class="unit unit-s-1 unit-m-1 unit-l-1-2 gutter-1-2">
       <ul class="list-group footer-links">
         <li class="list-group-item list-group-item-inline">
