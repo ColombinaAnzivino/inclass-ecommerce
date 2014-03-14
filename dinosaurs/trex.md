@@ -11,7 +11,7 @@ Dinosaurs are the most beautifull creatures that earth ever had.
 
 *Tynrannosaurus* is the most **fierce** dinosaur that ever existed.
 
-The T-rex lived the [Late Cretaceous Period](http://fc09.deviantart.net/fs70/f/2012/225/e/c/t_rex___small_arms_fire_by_mysticalpha-d5awa5t.jpg).
+The T-rex lived the [Late Cretaceous Period](http://fc09.deviantart.net/fs70/f/2012/225/e/c/t_rex___small_arms_fire_by_mysticalpha-d5awa5t.jpg)
 
 ## Features
 
